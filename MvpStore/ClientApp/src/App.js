@@ -1,3 +1,4 @@
+import "semantic-ui-css/semantic.min.css";
 import React, { Component } from "react";
 import { Route } from "react-router";
 import { Layout } from "./components/Layout";

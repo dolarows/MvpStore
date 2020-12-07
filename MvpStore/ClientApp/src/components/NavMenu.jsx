@@ -45,7 +45,7 @@ class NavMenu extends Component {
             Stores
           </Menu.Item>
 
-          <Menu.Item
+          {/* <Menu.Item
             name="sales"
             active={activeItem === "sales"}
             onClick={this.handleItemClick}
@@ -53,7 +53,7 @@ class NavMenu extends Component {
             to="/sales"
           >
             Sales
-          </Menu.Item>
+          </Menu.Item> */}
         </Menu>
       </Segment>
     );
