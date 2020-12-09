@@ -22,7 +22,7 @@ const Stores = () => {
         <CreateStoreModal />
       </div>
       <div>
-        <Table striped>
+        <Table striped celled>
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>Name</Table.HeaderCell>

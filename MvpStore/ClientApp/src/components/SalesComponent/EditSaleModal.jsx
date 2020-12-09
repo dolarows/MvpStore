@@ -3,7 +3,7 @@ import { Button, Icon, Modal, Form } from "semantic-ui-react";
 import Axios from "axios";
 
 const EditSaleModal = (props) => {
-  const { sale, customers, products, stores } = props;
+  const { sale, customers, products, stores, convertISODate } = props;
   const [open, setOpen] = useState(false);
   const [customer, setCustomer] = useState(sale.customer.id);
   const [product, setProduct] = useState(sale.product.id);
@@ -13,15 +13,12 @@ const EditSaleModal = (props) => {
     switch (input) {
       case "customer":
         setCustomer(e.target.value);
-        console.log(customer);
         break;
       case "product":
         setProduct(e.target.value);
-        console.log(product);
         break;
       case "store":
         setStore(e.target.value);
-        console.log(store);
         break;
       default:
         throw new Error();
@@ -60,7 +57,7 @@ const EditSaleModal = (props) => {
         <Form>
           <Form.Field>
             <label>Date Sold</label>
-            {/* <input value={currentDate()} disabled /> */}
+            <input value={convertISODate(sale.dateSold)} disabled />
           </Form.Field>
           <Form.Field>
             <label>Customer</label>

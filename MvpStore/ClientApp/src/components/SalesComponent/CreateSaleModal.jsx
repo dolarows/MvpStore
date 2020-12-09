@@ -17,6 +17,9 @@ const CreateSaleModal = (props) => {
     })
       .then((res) => {
         setOpen(false);
+        setProduct("");
+        setStore("");
+        setCustomer("");
       })
       .catch((err) => {
         console.log(err);

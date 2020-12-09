@@ -48,30 +48,11 @@ const Sales = () => {
       .catch((err) => console.log(err));
   };
 
-  // const getAll = () => {
-  //   Axios.all(
-  //     Axios.get("/Sales/GetSales", {
-  //       sales: setsales(),
-  //     }),
-  //     Axios.get("/Customers/GetCustomers"),
-  //     Axios.get("/Products/GetProducts"),
-  //     Axios.get("/Stores/GetStores")
-  //   )
-  //     .then(
-  //       Axios.spread((salesData, customersData, productsData, storesData) => {
-  //         console.log(salesData);
-  //         setcustomers(customersData.data);
-  //         setproducts(productsData.data);
-  //         setstores(storesData.data);
-  //       })
-  //     )
-  //     .catch((err) => console.log(err));
-  // };
-
-  const soldDate = (date) => {
-    let year = date.getFullYear();
-    let month = date.getMonth() + 1;
-    let day = date.getDate();
+  const convertISODate = (date) => {
+    let newDate = new Date(date);
+    let year = newDate.getUTCFullYear();
+    let month = newDate.getMonth() + 1;
+    let day = newDate.getDate();
 
     return `${day}/${month}/${year}`;
   };
@@ -86,7 +67,7 @@ const Sales = () => {
         />
       </div>
       <div>
-        <Table striped>
+        <Table striped celled>
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>Customer</Table.HeaderCell>
@@ -104,13 +85,14 @@ const Sales = () => {
                   <Table.Cell>{sale.customer.name}</Table.Cell>
                   <Table.Cell>{sale.product.name}</Table.Cell>
                   <Table.Cell>{sale.store.name}</Table.Cell>
-                  <Table.Cell>{sale.dateSold}</Table.Cell>
+                  <Table.Cell>{convertISODate(sale.dateSold)}</Table.Cell>
                   <Table.Cell>
                     <EditSaleModal
                       sale={sale}
                       customers={customers}
                       products={products}
                       stores={stores}
+                      convertISODate={convertISODate}
                     />
                   </Table.Cell>
                   <Table.Cell>
