@@ -13,7 +13,7 @@ class NavMenu extends Component {
 
     return (
       <Segment inverted>
-        <Menu inverted secondary>
+        <Menu inverted secondary stackable>
           <Menu.Item>MvpStore</Menu.Item>
           <Menu.Item
             name="Customers"
