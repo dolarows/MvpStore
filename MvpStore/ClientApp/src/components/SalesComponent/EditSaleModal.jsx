@@ -34,6 +34,7 @@ const EditSaleModal = (props) => {
       customerId: customer,
       productId: product,
       storeId: store,
+      dateSold: sale.dateSold,
     })
       .then((res) => {
         setOpen(false);

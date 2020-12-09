@@ -43,36 +43,7 @@ namespace MvpStore.Controllers
             return sales;
         }
 
-        //[HttpPatch("{id}")]
-        //public async Task<IActionResult> PatchSales(int id, [FromBody] JsonPatchDocument<Sales> patchSale )
-        //{
-        //    var sales = await _context.Sales.FindAsync(id);
-        //    if (patchSale == null)
-        //    {
-        //        return BadRequest();
-        //    }
-
-        //    _context.Sales.Update(sales);
-
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!SalesExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
-
-        //    return NoContent();
-        //}
-
+        
 
         // PUT: api/Sales/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
