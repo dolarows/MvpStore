@@ -12,10 +12,18 @@ const Sales = () => {
   const [stores, setstores] = useState([]);
 
   useEffect(() => {
-    getSales();
-    getCustomers();
-    getProducts();
-    getStores();
+    if (sales) {
+      getSales();
+    }
+    if (customers) {
+      getCustomers();
+    }
+    if (products) {
+      getProducts();
+    }
+    if (stores) {
+      getStores();
+    }
   }, [sales]);
 
   const getCustomers = () => {

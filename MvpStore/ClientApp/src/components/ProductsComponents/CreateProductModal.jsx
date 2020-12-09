@@ -55,6 +55,7 @@ const CreateProductModal = () => {
             <label>Price</label>
             <input
               type="number"
+              step=".01"
               placeholder="Enter Price..."
               onChange={(e) => handleChange(e, "price")}
             />

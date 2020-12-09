@@ -11,9 +11,11 @@ const CreateStoreModal = () => {
     switch (input) {
       case "name":
         setName(e.target.value);
+        console.log(name);
         break;
       case "address":
         setAddress(e.target.value);
+        console.log(address);
         break;
       default:
         throw new Error();
@@ -21,7 +23,7 @@ const CreateStoreModal = () => {
   };
 
   const createStore = () => {
-    Axios.post("/stores/PostStore", {
+    Axios.post("/Stores/PostStore", {
       name: name,
       address: address,
     })
@@ -46,7 +48,7 @@ const CreateStoreModal = () => {
           <Form.Field>
             <label>Name</label>
             <input
-              placeholder="Your Name"
+              placeholder="Store Name"
               onChange={(e) => handleChange(e, "name")}
               name="name"
             />
@@ -68,7 +70,7 @@ const CreateStoreModal = () => {
           content="Create"
           labelPosition="right"
           icon="checkmark"
-          onClick={createStore}
+          onClick={() => createStore()}
           positive
         />
       </Modal.Actions>

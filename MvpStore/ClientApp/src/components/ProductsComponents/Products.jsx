@@ -9,11 +9,13 @@ const Products = () => {
   const [products, setproducts] = useState([]);
 
   useEffect(() => {
-    Axios.get("/Products/GetProduct")
-      .then((res) => {
-        setproducts(res.data);
-      })
-      .catch((err) => console.log(err));
+    if (products) {
+      Axios.get("/Products/GetProduct")
+        .then((res) => {
+          setproducts(res.data);
+        })
+        .catch((err) => console.log(err));
+    }
   }, [products]);
 
   return (
