@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Table, Menu, Icon } from "semantic-ui-react";
-import "./Products.css";
 import CreateProductModal from "./CreateProductModal";
 import EditProductModal from "./EditProductModal";
 import DeleteProductModal from "./DeleteProductModal";

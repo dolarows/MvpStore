@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MvpStore.Models;
@@ -24,7 +25,8 @@ namespace MvpStore.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Sales>>> GetSales()
         {
-            return await _context.Sales.ToListAsync();
+            var result = await _context.Sales.Include(x => x.Customer).Include(x => x.Product).Include(x => x.Store).ToListAsync();
+            return result;
         }
 
         // GET: api/Sales/5
@@ -41,12 +43,44 @@ namespace MvpStore.Controllers
             return sales;
         }
 
+        //[HttpPatch("{id}")]
+        //public async Task<IActionResult> PatchSales(int id, [FromBody] JsonPatchDocument<Sales> patchSale )
+        //{
+        //    var sales = await _context.Sales.FindAsync(id);
+        //    if (patchSale == null)
+        //    {
+        //        return BadRequest();
+        //    }
+
+        //    _context.Sales.Update(sales);
+
+        //    try
+        //    {
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!SalesExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
+
+        //    return NoContent();
+        //}
+
+
         // PUT: api/Sales/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSales(int id, Sales sales)
         {
+
             if (id != sales.Id)
             {
                 return BadRequest();

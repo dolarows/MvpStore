@@ -1,0 +1,1175 @@
+[
+    {
+        "id": 4001,
+        "productId": 2001,
+        "customerId": 1001,
+        "storeId": 3001,
+        "dateSold": "2020-11-27T16:00:12.493",
+        "customer": {
+            "id": 1001,
+            "name": "Dolapo",
+            "address": "London",
+            "sales": [
+                {
+                    "id": 4004,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-08T23:08:19.62",
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "store": {
+                                    "id": 3001,
+                                    "name": "M&S",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "product": {
+                                    "id": 2001,
+                                    "name": "Bag",
+                                    "price": 119.99,
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "product": {
+            "id": 2001,
+            "name": "Bag",
+            "price": 119.99,
+            "sales": [
+                {
+                    "id": 4004,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-08T23:08:19.62",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": []
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 4006,
+                    "productId": 2001,
+                    "customerId": 1002,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-09T00:10:49.79",
+                    "customer": {
+                        "id": 1002,
+                        "name": "Kenny",
+                        "address": "Oxford",
+                        "sales": [
+                            {
+                                "id": 4002,
+                                "productId": 2002,
+                                "customerId": 1002,
+                                "storeId": 3002,
+                                "dateSold": "2020-11-27T16:00:12.5",
+                                "product": {
+                                    "id": 2002,
+                                    "name": "Shoe",
+                                    "price": 99.99,
+                                    "sales": []
+                                },
+                                "store": {
+                                    "id": 3002,
+                                    "name": "Nike",
+                                    "address": "Oxford",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "store": {
+            "id": 3001,
+            "name": "M&S",
+            "address": "London",
+            "sales": [
+                {
+                    "id": 4004,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-08T23:08:19.62",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": []
+                    },
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 4006,
+                    "productId": 2001,
+                    "customerId": 1002,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-09T00:10:49.79",
+                    "customer": {
+                        "id": 1002,
+                        "name": "Kenny",
+                        "address": "Oxford",
+                        "sales": [
+                            {
+                                "id": 4002,
+                                "productId": 2002,
+                                "customerId": 1002,
+                                "storeId": 3002,
+                                "dateSold": "2020-11-27T16:00:12.5",
+                                "product": {
+                                    "id": 2002,
+                                    "name": "Shoe",
+                                    "price": 99.99,
+                                    "sales": []
+                                },
+                                "store": {
+                                    "id": 3002,
+                                    "name": "Nike",
+                                    "address": "Oxford",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 4002,
+        "productId": 2002,
+        "customerId": 1002,
+        "storeId": 3002,
+        "dateSold": "2020-11-27T16:00:12.5",
+        "customer": {
+            "id": 1002,
+            "name": "Kenny",
+            "address": "Oxford",
+            "sales": [
+                {
+                    "id": 4006,
+                    "productId": 2001,
+                    "customerId": 1002,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-09T00:10:49.79",
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": [
+                                        {
+                                            "id": 4004,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-12-08T23:08:19.62",
+                                            "store": {
+                                                "id": 3001,
+                                                "name": "M&S",
+                                                "address": "London",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "store": {
+                                    "id": 3001,
+                                    "name": "M&S",
+                                    "address": "London",
+                                    "sales": [
+                                        {
+                                            "id": 4004,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-12-08T23:08:19.62",
+                                            "customer": {
+                                                "id": 1001,
+                                                "name": "Dolapo",
+                                                "address": "London",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": [
+                                        {
+                                            "id": 4001,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-11-27T16:00:12.493",
+                                            "store": {
+                                                "id": 3001,
+                                                "name": "M&S",
+                                                "address": "London",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "store": {
+                                    "id": 3001,
+                                    "name": "M&S",
+                                    "address": "London",
+                                    "sales": [
+                                        {
+                                            "id": 4001,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-11-27T16:00:12.493",
+                                            "customer": {
+                                                "id": 1001,
+                                                "name": "Dolapo",
+                                                "address": "London",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": [
+                                        {
+                                            "id": 4004,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-12-08T23:08:19.62",
+                                            "product": {
+                                                "id": 2001,
+                                                "name": "Bag",
+                                                "price": 119.99,
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "product": {
+                                    "id": 2001,
+                                    "name": "Bag",
+                                    "price": 119.99,
+                                    "sales": [
+                                        {
+                                            "id": 4004,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-12-08T23:08:19.62",
+                                            "customer": {
+                                                "id": 1001,
+                                                "name": "Dolapo",
+                                                "address": "London",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": [
+                                        {
+                                            "id": 4001,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-11-27T16:00:12.493",
+                                            "product": {
+                                                "id": 2001,
+                                                "name": "Bag",
+                                                "price": 119.99,
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "product": {
+                                    "id": 2001,
+                                    "name": "Bag",
+                                    "price": 119.99,
+                                    "sales": [
+                                        {
+                                            "id": 4001,
+                                            "productId": 2001,
+                                            "customerId": 1001,
+                                            "storeId": 3001,
+                                            "dateSold": "2020-11-27T16:00:12.493",
+                                            "customer": {
+                                                "id": 1001,
+                                                "name": "Dolapo",
+                                                "address": "London",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "product": {
+            "id": 2002,
+            "name": "Shoe",
+            "price": 99.99,
+            "sales": []
+        },
+        "store": {
+            "id": 3002,
+            "name": "Nike",
+            "address": "Oxford",
+            "sales": []
+        }
+    },
+    {
+        "id": 4003,
+        "productId": 2003,
+        "customerId": 1003,
+        "storeId": 3003,
+        "dateSold": "2020-11-27T16:00:12.5",
+        "customer": {
+            "id": 1003,
+            "name": "John",
+            "address": "Manchester",
+            "sales": []
+        },
+        "product": {
+            "id": 2003,
+            "name": "Jean",
+            "price": 149.99,
+            "sales": []
+        },
+        "store": {
+            "id": 3003,
+            "name": "River Island",
+            "address": "Manchester",
+            "sales": []
+        }
+    },
+    {
+        "id": 4004,
+        "productId": 2001,
+        "customerId": 1001,
+        "storeId": 3001,
+        "dateSold": "2020-12-08T23:08:19.62",
+        "customer": {
+            "id": 1001,
+            "name": "Dolapo",
+            "address": "London",
+            "sales": [
+                {
+                    "id": 4001,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-11-27T16:00:12.493",
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "store": {
+                                    "id": 3001,
+                                    "name": "M&S",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                },
+                                "product": {
+                                    "id": 2001,
+                                    "name": "Bag",
+                                    "price": 119.99,
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "product": {
+            "id": 2001,
+            "name": "Bag",
+            "price": 119.99,
+            "sales": [
+                {
+                    "id": 4001,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-11-27T16:00:12.493",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": []
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 4006,
+                    "productId": 2001,
+                    "customerId": 1002,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-09T00:10:49.79",
+                    "customer": {
+                        "id": 1002,
+                        "name": "Kenny",
+                        "address": "Oxford",
+                        "sales": [
+                            {
+                                "id": 4002,
+                                "productId": 2002,
+                                "customerId": 1002,
+                                "storeId": 3002,
+                                "dateSold": "2020-11-27T16:00:12.5",
+                                "product": {
+                                    "id": 2002,
+                                    "name": "Shoe",
+                                    "price": 99.99,
+                                    "sales": []
+                                },
+                                "store": {
+                                    "id": 3002,
+                                    "name": "Nike",
+                                    "address": "Oxford",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "store": {
+            "id": 3001,
+            "name": "M&S",
+            "address": "London",
+            "sales": [
+                {
+                    "id": 4001,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-11-27T16:00:12.493",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": []
+                    },
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4006,
+                                "productId": 2001,
+                                "customerId": 1002,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-09T00:10:49.79",
+                                "customer": {
+                                    "id": 1002,
+                                    "name": "Kenny",
+                                    "address": "Oxford",
+                                    "sales": [
+                                        {
+                                            "id": 4002,
+                                            "productId": 2002,
+                                            "customerId": 1002,
+                                            "storeId": 3002,
+                                            "dateSold": "2020-11-27T16:00:12.5",
+                                            "product": {
+                                                "id": 2002,
+                                                "name": "Shoe",
+                                                "price": 99.99,
+                                                "sales": []
+                                            },
+                                            "store": {
+                                                "id": 3002,
+                                                "name": "Nike",
+                                                "address": "Oxford",
+                                                "sales": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 4006,
+                    "productId": 2001,
+                    "customerId": 1002,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-09T00:10:49.79",
+                    "customer": {
+                        "id": 1002,
+                        "name": "Kenny",
+                        "address": "Oxford",
+                        "sales": [
+                            {
+                                "id": 4002,
+                                "productId": 2002,
+                                "customerId": 1002,
+                                "storeId": 3002,
+                                "dateSold": "2020-11-27T16:00:12.5",
+                                "product": {
+                                    "id": 2002,
+                                    "name": "Shoe",
+                                    "price": 99.99,
+                                    "sales": []
+                                },
+                                "store": {
+                                    "id": 3002,
+                                    "name": "Nike",
+                                    "address": "Oxford",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 4006,
+        "productId": 2001,
+        "customerId": 1002,
+        "storeId": 3001,
+        "dateSold": "2020-12-09T00:10:49.79",
+        "customer": {
+            "id": 1002,
+            "name": "Kenny",
+            "address": "Oxford",
+            "sales": [
+                {
+                    "id": 4002,
+                    "productId": 2002,
+                    "customerId": 1002,
+                    "storeId": 3002,
+                    "dateSold": "2020-11-27T16:00:12.5",
+                    "product": {
+                        "id": 2002,
+                        "name": "Shoe",
+                        "price": 99.99,
+                        "sales": []
+                    },
+                    "store": {
+                        "id": 3002,
+                        "name": "Nike",
+                        "address": "Oxford",
+                        "sales": []
+                    }
+                }
+            ]
+        },
+        "product": {
+            "id": 2001,
+            "name": "Bag",
+            "price": 119.99,
+            "sales": [
+                {
+                    "id": 4001,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-11-27T16:00:12.493",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "store": {
+                                    "id": 3001,
+                                    "name": "M&S",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 4004,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-08T23:08:19.62",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "store": {
+                                    "id": 3001,
+                                    "name": "M&S",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "store": {
+                        "id": 3001,
+                        "name": "M&S",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "store": {
+            "id": 3001,
+            "name": "M&S",
+            "address": "London",
+            "sales": [
+                {
+                    "id": 4001,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-11-27T16:00:12.493",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "product": {
+                                    "id": 2001,
+                                    "name": "Bag",
+                                    "price": 119.99,
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4004,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-12-08T23:08:19.62",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 4004,
+                    "productId": 2001,
+                    "customerId": 1001,
+                    "storeId": 3001,
+                    "dateSold": "2020-12-08T23:08:19.62",
+                    "customer": {
+                        "id": 1001,
+                        "name": "Dolapo",
+                        "address": "London",
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "product": {
+                                    "id": 2001,
+                                    "name": "Bag",
+                                    "price": 119.99,
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    },
+                    "product": {
+                        "id": 2001,
+                        "name": "Bag",
+                        "price": 119.99,
+                        "sales": [
+                            {
+                                "id": 4001,
+                                "productId": 2001,
+                                "customerId": 1001,
+                                "storeId": 3001,
+                                "dateSold": "2020-11-27T16:00:12.493",
+                                "customer": {
+                                    "id": 1001,
+                                    "name": "Dolapo",
+                                    "address": "London",
+                                    "sales": []
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]

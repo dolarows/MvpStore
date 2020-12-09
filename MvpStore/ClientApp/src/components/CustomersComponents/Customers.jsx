@@ -1,21 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Axios from "axios";
 import { Table, Menu, Icon } from "semantic-ui-react";
-import "./Customer.css";
 import CreateCustomerModal from "./CreateCustomerModal";
 import EditCustomerModal from "./EditCustomerModal";
 import DeleteCustomerModal from "./DeleteCustomerModal";
 
 const Customers = () => {
   const [customers, setcustomers] = useState([]);
+  const mountedRef = useRef(true);
 
   useEffect(() => {
+    getCustomer();
+  }, [customers]);
+
+  const getCustomer = () => {
     Axios.get("/Customers/GetCustomer")
       .then((res) => {
+        if (!mountedRef.current) return null;
         setcustomers(res.data);
       })
       .catch((err) => console.log(err));
-  }, [customers]);
+  };
 
   return (
     <div>

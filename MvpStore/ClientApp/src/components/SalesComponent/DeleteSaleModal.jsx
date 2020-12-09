@@ -7,7 +7,7 @@ const DeleteSaleModal = (props) => {
   const [open, setOpen] = useState(false);
 
   const DeleteSale = (id) => {
-    Axios.delete(`/sales/DeleteSale/${sale.id}`)
+    Axios.delete(`/sales/DeleteSales/${sale.id}`)
       .then((res) => {
         setOpen(false);
       })

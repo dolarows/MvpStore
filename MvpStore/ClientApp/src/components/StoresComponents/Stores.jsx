@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Table, Menu, Icon } from "semantic-ui-react";
-import "./Stores.css";
 import CreateStoreModal from "./CreateStoreModal";
 import EditStoreModal from "./EditStoreModal";
 import DeleteStoreModal from "./DeleteStoreModal";
@@ -26,9 +25,8 @@ const Stores = () => {
         <Table striped>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell>Product</Table.HeaderCell>
-              <Table.HeaderCell>Customer</Table.HeaderCell>
-              <Table.HeaderCell>Store</Table.HeaderCell>
+              <Table.HeaderCell>Name</Table.HeaderCell>
+              <Table.HeaderCell>Address</Table.HeaderCell>
               <Table.HeaderCell>Actions</Table.HeaderCell>
               <Table.HeaderCell>Actions</Table.HeaderCell>
             </Table.Row>
@@ -38,8 +36,6 @@ const Stores = () => {
               return (
                 <Table.Row key={store.id}>
                   <Table.Cell>{store.name}</Table.Cell>
-                  <Table.Cell>{store.address}</Table.Cell>
-                  <Table.Cell>{store.address}</Table.Cell>
                   <Table.Cell>{store.address}</Table.Cell>
                   <Table.Cell>
                     <EditStoreModal store={store} />

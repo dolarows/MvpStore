@@ -3,18 +3,25 @@ import { Button, Icon, Modal, Form } from "semantic-ui-react";
 import Axios from "axios";
 
 const EditSaleModal = (props) => {
-  const { sale } = props;
+  const { sale, customers, products, stores } = props;
   const [open, setOpen] = useState(false);
-  const [name, setName] = useState(sale.name);
-  const [address, setAddress] = useState(sale.address);
+  const [customer, setCustomer] = useState(sale.customer.id);
+  const [product, setProduct] = useState(sale.product.id);
+  const [store, setStore] = useState(sale.store.id);
 
   const handleChange = (e, input) => {
     switch (input) {
-      case "name":
-        setName(e.target.value);
+      case "customer":
+        setCustomer(e.target.value);
+        console.log(customer);
         break;
-      case "address":
-        setAddress(e.target.value);
+      case "product":
+        setProduct(e.target.value);
+        console.log(product);
+        break;
+      case "store":
+        setStore(e.target.value);
+        console.log(store);
         break;
       default:
         throw new Error();
@@ -22,10 +29,11 @@ const EditSaleModal = (props) => {
   };
 
   const EditSale = (id) => {
-    Axios.put(`/sales/PutSale/${sale.id}`, {
+    Axios.put(`/sales/PutSales/${sale.id}`, {
       id: id,
-      name: name,
-      address: address,
+      customerId: customer,
+      productId: product,
+      storeId: store,
     })
       .then((res) => {
         setOpen(false);
@@ -50,20 +58,59 @@ const EditSaleModal = (props) => {
       <Modal.Content>
         <Form>
           <Form.Field>
-            <label>Name</label>
-            <input
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => handleChange(e, "name")}
-            />
+            <label>Date Sold</label>
+            {/* <input value={currentDate()} disabled /> */}
           </Form.Field>
           <Form.Field>
-            <label>Address</label>
-            <input
-              placeholder="Enter Address..."
-              value={address}
-              onChange={(e) => handleChange(e, "address")}
-            />
+            <label>Customer</label>
+            <select
+              value={customer}
+              onChange={(e) => handleChange(e, "customer")}
+            >
+              <option value={sale.customer.id}>{sale.customer.name}</option>
+              {customers
+                .filter((c) => c.id !== sale.customer.id)
+                .map((customer) => {
+                  return (
+                    <option key={customer.id} value={customer.id}>
+                      {customer.name}
+                    </option>
+                  );
+                })}
+            </select>
+          </Form.Field>
+          <Form.Field>
+            <label>Product</label>
+            <select
+              value={product}
+              onChange={(e) => handleChange(e, "product")}
+            >
+              <option value={sale.product.id}>{sale.product.name}</option>
+              {products
+                .filter((p) => p.id !== sale.product.id)
+                .map((product) => {
+                  return (
+                    <option key={product.id} value={product.id}>
+                      {product.name}
+                    </option>
+                  );
+                })}
+            </select>
+          </Form.Field>
+          <Form.Field>
+            <label>Store</label>
+            <select value={store} onChange={(e) => handleChange(e, "store")}>
+              <option value={sale.store.id}>{sale.store.name}</option>
+              {stores
+                .filter((s) => s.id !== sale.store.id)
+                .map((store) => {
+                  return (
+                    <option key={store.id} value={store.id}>
+                      {store.name}
+                    </option>
+                  );
+                })}
+            </select>
           </Form.Field>
         </Form>
       </Modal.Content>
